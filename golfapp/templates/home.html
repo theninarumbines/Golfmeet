@@ -1,0 +1,154 @@
+{% load staticfiles  %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Golfmeet</title>
+
+    <!-- stylesheets -->
+    <link href="{% static 'assets/stylesheets/bootstrap.css' %}" type="text/css" media="screen" rel="stylesheet">
+    <link href="{% static 'assets/stylesheets/global.css' %}" type="text/css" media="screen" rel="stylesheet">
+    <link href="{% static 'assets/stylesheets/home.css' %}" type="text/css" media="screen" rel="stylesheet">
+
+    <!-- fonts -->
+     <link href='http://fonts.googleapis.com/css?family=Comfortaa:400,700,300' rel='stylesheet' type='text/css'>
+     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,700' rel='stylesheet' type='text/css'>
+
+
+
+</head>
+
+<body>
+      <nav class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container">
+          <h2 class="navbar-brand"><a href="#">
+            GolfMeet</a></h2>
+          <a class="btn btn-default navbar-btn navbar-right" href="login">Log In</a>
+          <a class="btn btn-default navbar-btn navbar-right signUpButton" href="signup">Sign Up</a>
+        </div>
+      </nav>
+
+     
+    <div class="headerWrap">
+      <div class="container">
+          <h1 class="headerLogo">GolfMeet</h1>
+          <h1 class="headerText">Your Social Golf App</h1>
+          <h2 class="subheadText"> Meet other passionate golfers nearby and enjoy a round of golf or hit a few buckets at the range.
+      </div>
+    </div>
+    <div class="aboutWrap">
+      <div class="container">
+          <div class="ulDiv">
+            <div class="col-xs-6 col-md-4 liDiv">
+              <h3 class="aboutWrap-h3">Track</h3>
+              <img src="{% static 'assets/images/trackIcon.png' %}" width="220px">
+              <p>TRACK your scores and iron distances with our dynamic progress charts.</p>
+            </div>
+            <div class="col-xs-6 col-md-4 liDiv">
+              <h3 class="aboutWrap-h3">Meet</h3>
+              <img src="{% static 'assets/images/meetIcon.png' %}" width="220px">
+
+              <p>MEET local passionate golfers and schedule a tee time!</p>
+            </div>
+            <div class="col-xs-6 col-md-4 liDiv">
+              <h3 class="aboutWrap-h3">Play</h3>
+              <img src="{% static 'assets/images/playIcon.png' %}" width="220px">
+              <p>PLAY a round of golf at a nearby course or get lessons at a practice facility. </p>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="quoteWrap">
+      <div class="container">
+        <!-- Carousel
+              ================================================== -->
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <div class="container">
+                      <div class="carousel-caption">
+                        <h1>Example headline.</h1>
+                        <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="container">
+                      <div class="carousel-caption">
+                        <h1>Another example headline.</h1>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi.</p>     
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="container">
+                      <div class="carousel-caption">
+                        <h1>One more for good measure.</h1>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+              </div>
+
+              <!-- /.carousel -->
+        <!-- <h2 class="quoteWrap-h2">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi.</h2> -->
+      </div>
+    </div>
+    <div class="featuresWrap">
+      <div class="container">
+        <h5>Enjoy And Explore Awesome Features</h5>
+          <div class="ulDiv row">
+            <div class="col-xs-6 col-sm-3 liDiv"><img src="{% static 'assets/images/scoreCardIcon.png' %}" width="100px" class="featuresImages">
+              <h3>Scorecard</h3>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+            <div class="col-xs-6 col-sm-3 liDiv"><img src="{% static 'assets/images/calendarIcon.png' %}" width="100px" class="featuresImages">
+              <h3>Calendar</h3>
+              <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates</p>
+            </div>
+            <div class="col-xs-6 col-sm-3 liDiv"><img src="{% static 'assets/images/coursesIcon.png' %}" width="100px" class="featuresImages">
+              <h3>Maps</h3>
+              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.</p>
+            </div>
+            <div class="col-xs-6 col-sm-3 liDiv"><img src="{% static 'assets/images/dealsIcon.png' %}" width="100px" class="featuresImages">
+              <h3>Deals</h3>
+              <p> Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+      <footer>
+        <div class="container">
+         <!--  <ul class="navbar-text">
+            <li>About</li>
+            <li>Contact</li>
+            <li>Privacy Policy</li>
+            <li>Terms and Conditions</li>
+          </ul> -->
+          <p> &copy; Golfmeet. All Rights Reserved 2013.</p>
+
+        </div>
+
+      </footer>
+
+      <!-- scripts -->
+      <script type="text/javascript" src="{% static 'assets/js/jquery.js' %}"></script>
+      <script type="text/javascript" src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+      <script type="text/javascript" src="{% static 'assets/js/dashboard.js' %}"></script>
+
+<body>
+ </html>

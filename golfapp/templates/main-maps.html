@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+{% block content %}
+
+<head>
+
+    <title>Golfmeet: Dashboard</title>
+
+    <!-- stylesheets -->
+    <link href="{% static 'assets/stylesheets/dashboard.css' %}" type="text/css" media="screen" rel="stylesheet">
+    <style>
+        #map {
+            width: 1200px;
+            height: 800px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="{% static 'assets/images/Golfmeet-logo5.png' %}" height="45px">
+        </a>
+      <button type="button" class="btn btn-default dropdown-toggle" data-target="#" data-toggle="dropdown">
+        <span class="glyphicon glyphicon-user"></span>
+      </button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="map"
+        <iframe width='100%' height='100%' frameBorder='0' src='https://a.tiles.mapbox.com/v3/ronchris.ge4ei0b3.html?secure=1#9/37.6869010925293/-122.43890380859375'></iframe>
+    </div>
+
+
+{% endblock %}
+</body>
+ </html>
+
